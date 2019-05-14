@@ -2,6 +2,18 @@
 <html lang="pt-br">
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140129446-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-140129446-1');
+	</script>
 	<meta charset="UTF-8">
 	<meta name="description"
 		content="O SAPUI5 é uma biblioteca usada para criar apps desktop e mobile, executados no navegador. Com o SAPUI5, criam-se WebApps usando padrões de desenvolvimento Web.">
@@ -355,7 +367,7 @@
 		<p>
 			UI5 é uma biblioteca nada modesta. Para segregar ainda mais as diferentes funcionalidades da biblioteca,
 			desenvolvedores da SAP optaram por criar namespaces dentro do namespace sap, cada um com sua
-			responsabilidade. Abaixo do namespace sap, existem dois objetos:<br /><br />			
+			responsabilidade. Abaixo do namespace sap, existem dois objetos:<br /><br />
 			<strong>• sap.ui</strong> - Implementa diferentes funcionalidades JavaScript;<br />
 			<strong>• sap.m</strong> - Controles de interface gráfica para dispositivos móveis.
 		</p>
@@ -366,7 +378,8 @@
 			<strong>• sap.ui.base</strong> – Classes base de todo o UI5;<br />
 			<strong>• sap.ui.commons</strong> – Controles de interface gráfica para desktops;<br />
 			<strong>• sap.ui.core</strong> – Classes base de controles de interface gráfica, componentes e MVC;<br />
-			<strong>• sap.ui.device</strong> – Classes para extrair dados e funcionalidades de dispositivos móveis;<br />
+			<strong>• sap.ui.device</strong> – Classes para extrair dados e funcionalidades de dispositivos
+			móveis;<br />
 			<strong>• sap.ui.model</strong> – Comunicação entre Model e Controller.
 		</p>
 
