@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description"
+		content="O SAPUI5 é uma biblioteca usada para criar apps desktop e mobile, executados no navegador. Com o SAPUI5, criam-se WebApps usando padrões de desenvolvimento Web.">
+	<meta name="keywords" content="Biblioteca,JavaScript,SAP,SAPUI5">
+	<meta name="author" content="Guilherme Alves">
+	<meta name="robots" content="index,follow">
+	<meta name="generator" content="Visual Studio Code">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="icon" href="./img/01_sapui5_icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<title>SAPUI5: Conceitos, definições e exemplos desta biblioteca JavaScript.</title>
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#section1">Apresentação</a></li>
+				<li><a href="#section2">Introdução</a></li>
+				<li><a href="#section3">JavaScript</a></li>
+				<li><a href="#section4">Frameworks e Bibliotecas</a></li>
+				<li><a href="#section5">Frameworks</a></li>
+				<li><a href="#section6">Bibliotecas</a></li>
+				<li><a href="#section7">SAPUI5</a></li>
+				<li><a href="#section8">OpenUI5</a></li>
+				<li><a href="#section9">SAP Fiori</a></li>
+				<li><a href="#section10">Padrão MVC</a></li>
+				<li><a href="#section11">Protocolo OData</a></li>
+				<li><a href="#section12">Namespaces</a></li>
+				<li><a href="#section13">Demonstração</a></li>
+				<li><a href="#section14">Resultados</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<button id="botaoTopo">⬆</button>
+
+	<section id="section1">
+
+		<h1>SAP UI5</h1>
+
+		<h3>
+			Estrutura, principais conceitos e demonstrações de uso.
+		</h3>
+
+		<figure>
+			<img src="./img/01_sapui5_icon.png" alt="Logo SAPUI5">
+		</figure>
+
+		<p>
+			Com o crescimento da necessidade tecnológica e do avanço da Web ao longo dos anos, desenvolvedores e
+			empresas foram se moldando para melhor atender às demandas solicitadas. O exemplo utilizado neste artigo
+			é o da multinacional alemã de sistemas integrados de gestão empresarial (ERP) SAP SE, que viu neste
+			crescimento a possibilidade de expandir os meios de entrega dos dados de seus clientes não apenas
+			através de seus softwares desktop (SAP GUI), mas também através de uma de suas recentes tecnologias: o
+			kit de ferramentas de desenvolvimento de interface do usuário da SAP para HTML5, ou simplesmente SAPUI5,
+			uma coleção de bibliotecas desenvolvida com HTML5, CSS e JavaScript, com o intuito de oferecer uma
+			melhor interface de usuário para seus produtos.
+		</p>
+
+	</section>
+
+	<hr>
+
+	<section id="section2">
+
+		<h2>INTRODUÇÃO</h2>
+
+		<p>
+			As necessidades e demandas em evolução do usuário podem facilmente reformular a composição e o design de
+			um aplicativo. A SAP percebeu que a interface do usuário (UI) está mais suscetível a mudanças hoje do
+			que nunca.
+		</p>
+		<p>
+			Baseado neste argumento é que iniciamos a análise do projeto que reformulou a experiência do
+			usuário (UX) dos produtos da multinacional alemã de sistemas integrados de gestão empresarial (ERP) SAP
+			SE, promovendo um conceito de simplicidade, usabilidade, acessibilidade e modernidade para aqueles que
+			desenvolvem ou simplesmente utilizam suas aplicações no dia a dia do trabalho.
+		</p>
+
+	</section>
+
+	<hr>
+
+	<section id="section3">
+
+		<h2>JAVASCRIPT</h2>
+
+		<p>
+			A linguagem JavaScript, também conhecida popularmente pela sua sigla JS, foi desenvolvida por Brendan
+			Eich em 1995 enquanto trabalhava na Netscape, sendo que sua primeira versão foi implementada no
+			navegador Netscape 2.0, no ano de 1996. Neste mesmo ano, a Microsoft desenvolveu e lançou sua versão com
+			o nome JScript e introduziu em seu navegador Internet Explorer 3.0, porém, por possuírem funcionalidades
+			implementadas de maneiras diferentes, os navegadores da época não seguiam um padrão unificado, sendo
+			difícil implementar scripts que funcionassem em ambos.
+		</p>
+		<p>
+			No início, o JavaScript foi introduzido como uma forma de adicionar programas às páginas no
+			Netscape e, ao decorrer do tempo, a linguagem foi sendo adaptada por outros navegadores. Foi padronizada
+			em 1997, formalizando-se como a linguagem deveria trabalhar. Denominado de padrão ECMAScript, após a
+			organização ECMA International realizar a padronização, os nomes JavaScript e ECMAScript acabaram se
+			tornando sinônimos para a mesma linguagem, embora o nome JavaScript seja uma marca registrada atualmente
+			de propriedade da empresa Oracle. Hoje, é uma linguagem muito utilizada na Web, para fornecer diversas
+			formas de interatividade.
+		</p>
+		<p>
+			Dentre suas principais características: uma linguagem pequena e leve, interpretada (não
+			compilada), orientada a objetos, multiplataforma, com tipagem dinâmica (tipos de dados não precisam ser
+			declarados) e com suporte a funções de primeira classe.
+		</p>
+
+	</section>
+
+	<hr>
+
+	<section id="section4">
+
+		<h2>FRAMEWORKS E BIBLIOTECAS</h2>
+
+		<p>
+			O tempo passou e, com ele, a necessidade de novas implementações e novas maneiras de escrever código
+			JavaScript também surgiram. Frameworks e bibliotecas são ferramentas que impõem funcionalidades e
+			conjuntos de padrões de desenvolvimento que auxiliam o desenvolvedor na escrita do código e na
+			facilidade de manutenção da aplicação, havendo frameworks e bibliotecas para as mais diversas linguagens
+			de programação existentes hoje, e surgindo novos modelos a cada dia. Uma analogia básica para distinguir
+			um framework de uma biblioteca é que, enquanto um framework pode conter várias bibliotecas em seu escopo
+			e realiza a chamada de uma aplicação, uma aplicação pode usar bibliotecas, mesmo que elas não pertençam
+			a um framework. A analogia pode ser exemplificada pelo Diagrama 1, exibido a seguir.
+		</p>
+
+		<figure>
+			<img src="./img/02_fb.png" class="imgResize"
+				alt="Diagrama explicando como uma aplicação utiliza frameworks e bibliotecas">
+			<figcaption>Biblioteca vs. Framework.</figcaption>
+		</figure>
+
+		<p>
+			Por mais que essas ferramentas auxiliem e ajudem o programador com maior qualidade e rapidez no
+			desenvolvimento do código, depender delas pode ser um problema caso um dia não estiverem mais disponíveis ou
+			seus mantenedores descontinuarem suas atualizações. Por isso, é sempre bom procurar entender mais de
+			JavaScript do que do framework ou da biblioteca em si, caso empecilhos aconteçam.
+		</p>
+
+	</section>
+
+	<hr>
+
+	<section id="section5">
+
+		<h2>FRAMEWORKS</h2>
+
+		<p>
+			Um framework (ou framework de aplicação) é um projeto de subsistema composto por um conjunto de classes
+			abstratas e concretas e as interfaces entre elas. Detalhes específicos do framework utilizado em um
+			projeto, por exemplo, são aplicados através da implementação de componentes e classes abstratas do
+			mesmo. Os frameworks raramente são aplicações propriamente ditas. As aplicações são geralmente
+			constituídas pela integração de vários frameworks. Atualmente, Angular e Vue.js são alguns dos exemplos
+			de frameworks mais conhecidos e usados no mundo JavaScript.
+		</p>
+
+	</section>
+
+	<hr>
+
+	<section id="section6">
+
+		<h2>BIBLIOTECAS</h2>
+
+		<p>
+			É o recurso mais utilizado no mundo da programação, enquanto muitas pessoas não se dão conta do quão
+			importante é e do quanto utilizam. Pode-se dizer que as bibliotecas são coleções de implementações de
+			comportamentos, importados diretamente no código de uma aplicação, possuindo uma interface bem definida
+			para cada comportamento e método invocado. Dito em outras palavras, bibliotecas são usadas para não
+			precisar “reinventar a roda”, conceito utilizado quando se quer dizer que não é necessário criar tudo do
+			zero e que já existem funcionalidades das quais precisamos, prontas para serem utilizadas. jQuery é uma
+			das bibliotecas JS mais utilizadas por desenvolvedores, tendo como uma implementação de comportamento a
+			manipulação do HTML. Atualmente, uma biblioteca muito conhecida e utilizada é a React.
+		</p>
+
+	</section>
+
+	<hr>
+
+	<section id="section7">
+
+		<h2>SAPUI5</h2>
+
+		<p>
+			Em 2011, a SAP lançou o SAPUI5 (ou simplesmente UI5), uma biblioteca de desenvolvimento de interface do
+			cliente baseada em JavaScript (com jQuery como base), CSS e HTML5, que incentiva uma experiência de
+			usuário consistente. Os aplicativos desenvolvidos com esta tecnologia são totalmente responsivos nos
+			ambientes em que são executados e, dependendo do dispositivo (smartphone, tablet ou desktop), são
+			utilizadas diferentes bibliotecas de interface do usuário. Os controles da interface do usuário se
+			adaptam automaticamente às capacidades de cada dispositivo.
+		</p>
+		<p>
+			A biblioteca é entregue com alguns produtos da SAP, tais como NetWeaver, Hana e Hana Cloud
+			Plataform. O SAPUI5 não gera nenhum custo adicional para os clientes que adquirem seus produtos, mas,
+			para usufruir das funcionalidades dessas ferramentas, uma boa quantia de dinheiro já foi gasta.
+		</p>
+		<p>
+			O SAPUI5 suporta o conceito MVC (Model-View-Controller), que é um padrão de arquitetura de
+			software para implementar interfaces de usuário, onde a manipulação do modelo de dados, o design da UI e
+			a lógica do aplicativo ficam separadas, e o meio mais recomendado para acessar dados corporativos da
+			aplicação é utilizando o modelo OData. Tanto MVC quanto OData serão abordados em maiores detalhes
+			posteriormente neste trabalho. No Diagrama 2, a seguir, observa-se a arquitetura empregada pelo SAPUI5:
+		</p>
+
+		<figure>
+			<img src="./img/03_sapui5.png" class="imgResize" alt="Explicação da arquitetura geral da biblioteca SAPUI5">
+			<figcaption>Visão geral da arquitetura do SAPUI5.</figcaption>
+		</figure>
+
+		<p>
+			Quando os usuários acessam um aplicativo baseado em SAPUI5 a partir do seu dispositivo, uma
+			solicitação é enviada ao respectivo servidor para carregar o aplicativo no navegador. A View acessa as
+			bibliotecas relevantes e, normalmente, o Model também é instanciado e os dados de negócios são buscados
+			no banco de dados.
+		</p>
+
+	</section>
+
+	<hr>
+
+	<section id="section8">
+
+		<h2>OPENUI5</h2>
+
+		<p>
+			O OpenUI5 é a versão gratuita e open source da biblioteca SAPUI5, disponível sob a licença Apache 2.0,
+			permitindo que a mesma seja usada, distribuída e alterada. Todo o núcleo do OpenUI5 e do SAPUI5,
+			contendo toda a funcionalidade central da biblioteca, são idênticos, incluindo as bibliotecas de
+			controle mais comumente usadas, que possuem a grande maioria dos controles existentes. Dentre as
+			diferenças entre as duas versões, estão algumas bibliotecas de controle mais exóticas, que ainda não
+			foram colocadas sob licença de código aberto. Existem muitas razões para isso, dentre elas questões
+			legais e esclarecimentos organizacionais, desenvolvidos em diferentes partes do SAP. Além da diferença
+			na perspectiva técnica, existem também diferenças relacionadas ao suporte de suas aplicações, enquanto a
+			versão comercial é atrelada a algum tipo de contrato, a correção de bugs é garantida com maior
+			velocidade, mas, ainda assim, a versão open source também recebe as correções realizadas para o SAPUI5,
+			sendo essa uma questão de tempo.
+		</p>
+		<p>
+			De acordo com o HotFrameworks, plataforma que realiza o ranqueamento de frameworks e bibliotecas
+			de acordo com seu número de estrelas no repositório do GitHub e no número de perguntas no Stack
+			Overflow, o OpenUI5 ocupa a 38° posição de popularidade entre os frameworks e bibliotecas de todas as
+			linguagens de programação, e a 13° posição entre as baseadas em JavaScript. Entre agosto e outubro de
+			2017, teve um crescimento exponencial nas plataformas citadas acima, conforme apresenta o Gráfico 1.
+		</p>
+
+		<figure>
+			<img src="./img/04_grafico_ui5.png" class="imgResize"
+				alt="Gráfico do crescimento da popularidade da biblioteca OpenUI5">
+			<figcaption>Crescimento da popularidade do OpenUI5 de 2015 a 2019.</figcaption>
+		</figure>
+
+	</section>
+
+	<hr>
+
+	<section id="section9">
+
+		<h2>SAP FIORI</h2>
+
+		<p>
+			No ambiente corporativo atual, os usuários enfrentam muitos desafios em busca de informações precisas,
+			em um curto espaço de tempo. Além disso, a disposição dessas informações a qualquer hora e em qualquer
+			lugar é muito importante para a sua capacidade de tomar decisões inteligentes e rápidas. A solução da
+			SAP para este problema é o SAP Fiori, aplicação desenvolvida totalmente com SAPUI5 em seu front-end, que
+			oferece uma experiência baseada em funções personalizadas do usuário (UX) para compromissos de toda a
+			empresa, através de linhas de negócios (LOBs), com usabilidade ideal em vários dispositivos para
+			implementar, personalizar e desenvolver aplicativos.
+		</p>
+		<p>
+			A empresa SAP, ao realizar uma pesquisa, constatou que a maioria dos usuários de suas aplicações
+			utilizam a interface de usuário do SAP (SAP GUI). Estas incluíam aplicações comuns relacionadas a
+			interações entre o gerente e o funcionário, como por exemplo, solicitação de licença, pedido de viagem,
+			etc. Essas interfaces possuíam mais de 300.000 mil telas com várias funções. Assim, a empresa verificou
+			quais eram os aplicativos utilizados com maior frequência e decidiu renová-los, nascendo o SAP Fiori.
+		</p>
+
+		<figure>
+			<img src="./img/05_fiori.png" class="imgResize imgClick" alt="Tela de uma aplicação SAP Fiori">
+			<figcaption>Tela de um aplicação SAP Fiori desenvolvida com UI5.</figcaption>
+		</figure>
+
+	</section>
+
+	<hr>
+
+	<section id="section10">
+
+		<h2>PADRÃO MVC</h2>
+
+		<p>
+			O UI5 utiliza o conceito de MVC para atingir os objetivos de suporte ao desenvolvimento em equipes
+			distribuídas com diferentes locais de origem, adicionar capacidade de declaração de interface do usuário
+			(em comparação com uma construção programática) e propor uma estrutura de arquivos, nomenclaturas e
+			padrões de uso. Hoje em dia, o conceito de MVC é aplicado de uma maneira um pouco diferente, do que a
+			descrita pelo seu próprio criador, Trygve Reenskaug:
+		</p>
+		<p class="pItalic">
+			"Fiz a primeira implementação e escrevi os relatórios originais do MVC enquanto eu era um
+			cientista visitante no Laboratório de Pesquisas da Xerox em Palo Alto (PARC) em 1978/79. MVC foi criado
+			como uma solução óbvia para o problema geral de fornecer aos usuários o controle sobre suas informações,
+			visto de várias perspectivas. MVC criou uma quantidade surpreendente de interesse. Alguns textos até
+			usam variantes pervertidas para o propósito oposto de fazer o computador controlar o usuário. MVC foi
+			concebido como uma solução geral para o problema de usuários controlarem um conjunto de dados grande e
+			complexo."
+		</p>
+		<p>
+			Na arquitetura de WebApps, as aplicações devem ser desenvolvidas utilizando-se camadas onde
+			diferentes fatores são levados em conta; os dados da aplicação obrigatoriamente devem ser separados do
+			conteúdo da página e esses conteúdos claramente devem estar separados dos aspectos da interface. O
+			Diagrama 3, a seguir, demonstra o funcionamento do padrão MVC em uma aplicação Web.
+		</p>
+
+		<figure>
+			<img src="./img/06_mvc.png" class="imgResize"
+				alt="Diagrama exemplificando a implementação do padrão MVC na Web">
+			<figcaption>A arquitetura MVC em uma aplicação Web.</figcaption>
+		</figure>
+
+	</section>
+
+	<hr>
+
+	<section id="section11">
+
+		<h2>PROTOCOLO ODATA</h2>
+
+		<p>
+			Open Data Protocol (OData) é um padrão aberto que fornece interoperabilidade e acesso a fontes de dados
+			via websites. Foi construído baseado em tecnologias Web, como HTTP, XML e JSON para fornecer acesso à
+			informação a partir de uma variedade de aplicações. Ele foi concebido para proporcionar uma API REST
+			acessível através da formação de uma URI apropriada, atribuindo-lhe para o cabeçalho HTTP
+			correspondente. Serviços OData são desenvolvidos para atender diversas aplicações. Simplificando, OData
+			é usado para expor, acessar e modificar informações de diferentes fontes.
+		</p>
+
+	</section>
+
+	<hr>
+
+	<section id="section12">
+
+		<h2>NAMESPACES</h2>
+
+		<p>
+			UI5 é uma biblioteca nada modesta. Para segregar ainda mais as diferentes funcionalidades da biblioteca,
+			desenvolvedores da SAP optaram por criar namespaces dentro do namespace sap, cada um com sua
+			responsabilidade. Abaixo do namespace sap, existem dois objetos:<br /><br />			
+			<strong>• sap.ui</strong> - Implementa diferentes funcionalidades JavaScript;<br />
+			<strong>• sap.m</strong> - Controles de interface gráfica para dispositivos móveis.
+		</p>
+		<p>
+			Abaixo do namespace sap.ui, se encontram outros namespaces importantes para a construção de
+			aplicações UI5, tais como:<br /><br />
+			<strong>• sap.ui.app</strong> – Contém classes depreciadas da biblioteca;<br />
+			<strong>• sap.ui.base</strong> – Classes base de todo o UI5;<br />
+			<strong>• sap.ui.commons</strong> – Controles de interface gráfica para desktops;<br />
+			<strong>• sap.ui.core</strong> – Classes base de controles de interface gráfica, componentes e MVC;<br />
+			<strong>• sap.ui.device</strong> – Classes para extrair dados e funcionalidades de dispositivos móveis;<br />
+			<strong>• sap.ui.model</strong> – Comunicação entre Model e Controller.
+		</p>
+
+	</section>
+
+	<hr>
+
+	<section id="section13">
+
+		<h2>DEMONSTRAÇÃO</h2>
+
+		<p>
+			Aplicações UI5 podem ser desenvolvidas no ambiente em que o desenvolvedor se sentir mais acomodado para
+			trabalhar, podendo ser em editores de texto (importando a biblioteca UI5 via tag script), na IDE Eclipse
+			(com o plugin SAPUI5 Tools devidamente instalado) ou, também, via SAP Web IDE, uma ferramenta poderosa,
+			extensível e baseada na Web que simplifica tanto o desenvolvimento de aplicativos SAP Fiori de ponta a
+			ponta quanto o ciclo de vida de aplicativos full-stack (UI, lógica de negócios e banco de dados).
+		</p>
+		<p>
+			Os ambientes de desenvolvimento integrado (IDE) são softwares que buscam facilitar o trabalho dos
+			programadores, podendo importar diversas funcionalidades de uma determinada linguagem de programação e
+			realizar a depuração do código, encontrando possíveis falhas e auxiliando em suas correções. A Figura 1,
+			a seguir, exibe um projeto em UI5 com o padrão MVC e toda sua hierarquia devidamente aplicada, sendo
+			desenvolvido no ambiente SAP Web IDE.
+		</p>
+
+		<figure>
+			<img src="./img/07_demo.png" class="imgResize imgClick"
+				alt="Estrutura de uma aplicação desenvolvida em UI5 no ambiente SAP Web IDE">
+			<figcaption>Estrutura de uma aplicação UI5 no ambiente SAP Web IDE.</figcaption>
+		</figure>
+
+		<p>
+			A seguir, a Figura 2 exibe tal aplicativo em execução no navegador. Observa-se que
+			todo o layout, inclusive os estilos, já foram proporcionados pelos próprios controles de
+			interface da biblioteca UI5.
+		</p>
+
+		<figure>
+			<img src="./img/08_app.png" class="imgResize imgClick"
+				alt="Tela de uma aplicação UI5 executada no navegador">
+			<figcaption>Aplicação UI5 sendo executada no navegador.</figcaption>
+		</figure>
+
+	</section>
+
+	<hr>
+
+	<section id="section14">
+
+		<h2>RESULTADOS</h2>
+
+		<p>
+			A Web e seu constante desenvolvimento fazem com que, a cada dia, surjam novas ferramentas para trabalhar
+			com os mais diversos tipos de aplicações disponíveis no mercado. Estar sempre atualizado com novas
+			tecnologias ou, ao menos, conhecer seus conceitos, é um grande passo para se familiarizar com o futuro e
+			garantir seu espaço no mercado de trabalho.
+		</p>
+		<p>
+			Antes da escolha de um framework ou biblioteca para se utilizar em uma aplicação, é necessário um
+			estudo aprofundado nas possíveis alternativas, buscando vantagens e desvantagens de seu uso e ponderando
+			as funcionalidades de acordo com as necessidades do projeto. Sendo uma tecnologia de código aberto, o
+			OpenUI5 apresenta-se como uma opção viável para o desenvolvimento de aplicações Web corporativas
+			complexas, justamente por ser desenvolvido por uma das maiores empresas de ERP do planeta e por permitir
+			explorar de uma maneira tão aberta o que ela pode oferecer, levando em consideração que, dificilmente,
+			são encontradas informações e treinamentos sobre sua gama de produtos sem precisar pagar um valor
+			consideravelmente alto por eles.
+		</p>
+		<p>
+			Todavia, por se tratar de uma tecnologia recente no mercado, a falta de materiais e opiniões
+			publicados sobre a biblioteca em questão podem dificultar que seja encontrada e considerada por novos
+			possíveis utilizadores, mas, como toda ferramenta bem estruturada, sua documentação é um ótimo ponto de
+			partida.
+		</p>
+
+	</section>
+
+	<hr>
+
+	<footer>
+
+		<p>
+			Guilherme H. F. Alves - Fatec Taquaritinga &copy;
+		</p>
+
+	</footer>
+
+	<script src="./js/script.js"></script>
+
+</body>
+
+</html>
