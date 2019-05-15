@@ -1,12 +1,3 @@
-/* function scrollNav() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-		document.getElementsByTagName("nav")[0].style.position = "fixed";
-		document.getElementsByTagName("nav")[0].style.animation = "fadein 2s";
-    } else {
-        document.getElementsByTagName("nav")[0].style.position = "absolute";
-    }
-} */
-
 function scrollBotaoTopo() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("botaoTopo").style.animation = "fadein 1s";
