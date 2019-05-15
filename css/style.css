@@ -40,7 +40,7 @@ p {	text-align: justify; text-indent: 3em; margin-top: 50px; line-height: 35px; 
 
 .pItalic { font-style: italic; padding-left: 20%; line-height: normal; }
 
-hr { margin: 0 10% 0 10%; color: #fff; opacity: 0.5; }
+hr { margin: 0 10% 0 10%; color: #fff; }
 
 footer p { text-align: center; text-indent: 0; margin-bottom: 50px; }
 
