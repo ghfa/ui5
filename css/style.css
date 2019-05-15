@@ -46,6 +46,8 @@ footer p { text-align: center; text-indent: 0; margin-bottom: 50px; }
 
 @keyframes fadein {	from { opacity: 0; } to { opacity: 1; } }
 
+@media (max-width: 319px) { header { display: none; } section { padding: 50px 15px 50px 15px; } p { font-size: 10px; } img { width: 100%; } h1, h2, h3, p { font-size: initial; text-indent: initial; } }
+
 @media (min-width: 320px) and (max-width: 360px) { header { display: none; } section { padding: 50px 5% 50px 5%; } h2 { font-size: 25px; } h3, p { font-size: 15px; } .imgResize { width: 100%; } footer p { font-size: 12px; } }
 
 @media (min-width: 361px) and (max-width: 375px) { header { display: none; } section { padding: 50px 5% 50px 5%; } h2 { font-size: 25px; } h3, p { font-size: 15px; } .imgResize { width: 100%; } footer p { font-size: 12px; } }
